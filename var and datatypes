@@ -30,5 +30,8 @@ void main(List<String> args) {
   // final type
   final data = 12;
   // data value cannot be rewrite because it is declare with final which makes it constant variable
-
+  
+  
+  // ways to declare non-nullable variables:-
+  String? name=null;
 }
