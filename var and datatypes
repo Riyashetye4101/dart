@@ -10,6 +10,7 @@ void main(List<String> args) {
   double fraction = 3.11;
   String mystring = 'hello world';
   bool flag = true;
+  // this are non-nullable types which need to be declare with initial values else it will throw error
   show(mystring, num1, fraction, flag);
 
   // runtime type changing
