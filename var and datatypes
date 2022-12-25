@@ -34,4 +34,6 @@ void main(List<String> args) {
   
   // ways to declare non-nullable variables:-
   String? name=null;
+  // accessing name length;
+  print(name?.length);               // returns null;
 }
