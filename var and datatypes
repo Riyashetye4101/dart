@@ -1,0 +1,33 @@
+void show(String data1, int num1, double num2, bool flag) {
+  print(data1.toString() + data1.runtimeType.toString());
+  print(num1.toString() + num1.runtimeType.toString());
+  print(num2.toString() + num2.runtimeType.toString());
+  print(flag.toString() + flag.runtimeType.toString());
+}
+
+void main(List<String> args) {
+  int num1 = 23;
+  double fraction = 3.11;
+  String mystring = 'hello world';
+  bool flag = true;
+  show(mystring, num1, fraction, flag);
+
+  // runtime type changing
+  dynamic slot;
+  slot = 'hello';
+  slot = 23;
+  // all are valid
+
+  // var short form similar to dynamic
+  var myshow = 'not dynamic';
+  var myshow2;
+  myshow2 = 'dynamic';
+  myshow2 = 12;
+  // here myshow is of string type but myshow2 is dynamic type because here while declaring
+  // its not initialize with any value so it consider its type as dynamic.
+
+  // final type
+  final data = 12;
+  // data value cannot be rewrite because it is declare with final which makes it constant variable
+
+}
